@@ -1,13 +1,26 @@
 $sudo apt-get install git
+
 $git config --global user.name "Your user-name"
+
 $git config --global user.email "your_email@youremail.com"
+
 $git init
+
 $git remote add origin https://github.com/user-name/my_project
+
 &git remote -v
+
 $touch my_file.cpp
+
 $git status
+
 &git add my_file.cpp
+
 $git commit -m "Message to Explain this Version/Snapshot"
+
+$git push
+
+$git push origin master
 
 
 
@@ -55,9 +68,9 @@ Connect Your Local Repository To Your GitHub Repository:
 - To take a "snapshot" of the project:
     $git commit -m "Message to Explain this Version/Snapshot"
 - To push you snapshot to GitHub:
-    &git push
+    $git push
   or:
-    &git push origin master
+    $git push origin master
 
 
 
