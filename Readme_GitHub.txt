@@ -1,27 +1,20 @@
+
+-===- List Of Commands -===-
+
 $sudo apt-get install git
-
 $git config --global user.name "Your user-name"
-
 $git config --global user.email "your_email@youremail.com"
-
 $git init
-
 $git remote add origin https://github.com/user-name/my_project
-
 &git remote -v
 
 $touch my_file.cpp
-
 $git status
-
 &git add my_file.cpp
-
 $git commit -m "Message to Explain this Version/Snapshot"
-
-$git push
-
-$git push origin master
-
+$git push  /  $git push origin master  /  $git push -u origin master
+$git pull origin master
+$git log
 
 
 -===- Setup Git and Github for the First Time -===-
@@ -61,19 +54,27 @@ Connect Your Local Repository To Your GitHub Repository:
 
 - Now make a new file in your project directory, you can use:
     $touch my_file.cpp
+
 - To see what files Git is tracking:
     $git status
+
 - To make Git start to track a file:
     $git add my_file.cpp
+
 - To take a "snapshot" of the project:
     $git commit -m "Message to Explain this Version/Snapshot"
+
 - To push you snapshot to GitHub:
     $git push
   or:
     $git push origin master
+  or:  The -u tells Git to remember the parameters, so that next time we can simply run git push.
+    $git push -u origin master
 
+- To pull the project from GitHub:
+    $git pull origin master
 
-
-
+- To see the history of commits:
+    $git log
 
 
