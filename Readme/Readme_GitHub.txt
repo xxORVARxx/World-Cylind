@@ -63,12 +63,21 @@ Connect Your Local Repository To Your GitHub Repository:
 
 - To take a "snapshot" of the project:
     $git commit -m "Message to Explain this Version/Snapshot"
+    
+- You also have to use "add" on files you make changes too, 
+  so the new version of the file will be in the next commit:
+    $git add my_file.cpp
+
+- To commit a snapshot of all changed files that have been added with "add" at some point,
+  so we dont have to "add" them all agan:
+    &git commit -a -m "Message to Explain this Version/Snapshot"
 
 - To push you snapshot to GitHub:
     $git push
   or:
     $git push origin master
-  or:  The -u tells Git to remember the parameters, so that next time we can simply run git push.
+  or:  The -u tells Git to remember the parameters, 
+       so that next time we can simply run git push.
     $git push -u origin master
 
 - To pull the project from GitHub:
